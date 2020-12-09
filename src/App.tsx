@@ -1,5 +1,5 @@
 import React from "react"
-import "./App.less"
+import "./App.scss"
 import { BrowserRouter, Route, Switch, Redirect } from "react-router-dom"
 import Login from './pages/login/login'
 import Home from './pages/home'

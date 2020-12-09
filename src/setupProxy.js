@@ -4,8 +4,13 @@ const Config = require("../config/const");
 
 module.exports = function(app) {
   app.use(
-    proxy("/kapi", {
-      target: "http://localhost:" + Config.server.port
+    proxy("/proxyXcn", {
+      target: "http://localhost:4000",
+      ws: true,
+      changeOrigin: true,
+      pathRewrite: {
+        "^/proxyXcn": ""
+      }
     })
   );
   app.use(

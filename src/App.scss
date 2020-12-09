@@ -1,5 +1,9 @@
-.App {
-  text-align: center;
+@import '~antd/dist/antd.css';
+.app {
+  background: #fff;
+  color: #333;
+  height: 100vh;
+  width: 100vw;
 }
 .title{
   text-align: center;
